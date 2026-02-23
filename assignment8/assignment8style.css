@@ -57,6 +57,7 @@ header {
   margin-bottom: 10px;
   display: flex;
   flex-flow: row wrap;
+  flex: 1;
 }
 
 body > * {
@@ -139,6 +140,7 @@ aside img {
 
 footer {
   margin-top: 10px;
+  flex: 1;
 }
 
 /* HK additions 
