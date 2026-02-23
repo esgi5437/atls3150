@@ -1,0 +1,32 @@
+h1, h2 {
+  color: rgb(0, 49, 0);
+}
+
+p, dd {
+  color: green;
+}
+
+ul {
+  border: 5px solid orange;
+}
+
+ol {
+  border: 5px solid orange;
+}
+
+ol, ul {
+  padding: 5px 40px;
+  border-radius: 4px;
+}
+
+h1, strong, dt {
+  color: rgb(0, 54, 0);
+}
+
+dt {
+  font-weight: bold;
+}
+
+em {
+  color: rgb(70, 133, 67);
+}
