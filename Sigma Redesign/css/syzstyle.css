@@ -1,0 +1,441 @@
+body { 
+    margin: 0; 
+    font-family: 'Raleway', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none; 
+    color: #ffffff;
+}
+
+
+.site-header { 
+    background: #000000; 
+    position: sticky; 
+    top: 0; 
+
+    z-index: 500;
+}
+
+.header-wrapper { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 10%; 
+}
+
+.syz-title h1 {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin: 0;
+    color: #ffffff;
+}
+
+.syz-title .chapter {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin: 0;
+    color: #ffffff;
+}
+
+
+
+.nav-menu ul { 
+    display: flex; 
+    list-style: none; 
+    gap: 20px; 
+    margin: 0;
+}
+
+.nav-menu a { 
+    text-decoration: none; 
+    color: #ffffff; 
+    font-weight: bold; 
+    font-size: 14px; 
+    text-transform: uppercase; 
+}
+
+.nav-menu a.active { 
+    border-bottom: 2px solid; 
+}
+
+a:hover, .submit-btn:hover, select:focus, select:active, input:focus, input:active, 
+textarea:focus, textarea:active, input:focus + label, input:active + label, 
+label[for]:focus, label[for]:active { 
+    color: #FFCB05; 
+}
+
+
+
+
+.main-container {
+    display: flex;
+    max-width: 1000px; 
+    margin-inline: auto;
+
+    align-items: center;
+    position: relative;
+    padding-top: 20px;
+}
+
+.main-image-box img {
+    width: 100%;
+    height: auto; 
+    display: block;
+    border-radius: 8px;
+}
+
+.main-text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+    width: 100%;
+}
+
+.main-title {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(2rem, 8vw, 6rem); 
+    line-height: 1.1;
+    letter-spacing: 9px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.subtitle {
+    font-size: clamp(1rem, 2vw, 3rem); 
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+
+.welcome {
+    display: flex;
+    max-width: 1000px; 
+    margin-inline: auto;
+
+    padding: 80px 0;
+    align-items: center;
+    gap: 50px;
+}
+
+.welcome-text, .welcome-image {
+    flex: 1;
+}
+
+.welcome-text {
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+.welcome-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display:block;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.accent-line {
+    width: 50px;
+    border: 2px solid black;
+    margin-left: 0;
+}
+
+.quote-strip {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+
+    margin-inline: auto;
+    margin-bottom: 30px;
+
+    background:black;
+    color: white;
+    padding: 20px 0px;
+
+    justify-content: center;
+    text-align: center;
+    font-style: italic;
+    font-size: 24px;
+}
+
+
+
+
+
+
+.about-intro-section { 
+    display: flex; 
+    max-height: 620px;
+    align-items: center;
+    gap: 50px; 
+    background: rgb(255, 239, 152);
+    overflow: hidden;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 100px;
+    height: 600px;
+}
+
+.about-image img { 
+    width: 100%; 
+    height: 100%; 
+    display: block;
+    object-fit: cover;
+    object-position: top;
+}
+
+.about-text {
+    flex: 1;
+    display: flex;
+    align-items: left;
+    padding-right: 10px;
+}
+
+.about-text-content {
+    flex: 1;
+    max-width: 400px;
+}
+
+
+
+
+
+
+.rays-section {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.rays-section h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+
+.rays-list-container {
+    max-width: 900px;
+    margin: 40px auto;
+    margin-top: 50px;
+    list-style: none;
+    padding: 0;
+}
+
+.ray-item {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffcfcf;
+}
+
+
+
+.ray-title {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #AD3209; 
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.ray-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+
+
+
+
+.symbols-section {
+    text-align: center;
+    padding: 60px 10%;
+    background-color: #fafafa;
+}
+
+.symbols-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.symbol {
+    width: 250px;
+    text-align: center;
+}
+
+.symbol img {
+    width: 200px;  
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 50%; 
+    border: 4px solid #770000; 
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+.contact-page { 
+    text-align: center; 
+    padding: 80px 10%; 
+    background: #FFEF98; 
+    flex-grow: 1;
+}
+
+
+legend {
+	font-weight: bold;
+    letter-spacing: 1.5px;
+    padding-inline: 15px;
+}
+
+fieldset {
+    border: 4px solid #212121;
+    color: #212121;
+    margin-block: 20px;
+}
+
+
+.contact-form-section { 
+    display: flex; 
+    justify-content: center;
+    max-width: 1100px; 
+    margin: 30px auto; 
+}
+
+
+#message-form { 
+    display: flex; 
+    flex-direction: column; 
+    width: 100%;
+    max-width: 800px; 
+}
+
+#message-form li {   
+	list-style:none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#message-form label {
+    font-weight: bold;
+	text-align: right;
+	margin-right: 20px;
+	width: 80px;
+	display: inline-block; /* width will not work for “inline” elements such as “label”. Therefore we need to set it to “inline-block” */
+}
+
+
+#message-form input.reqfield {
+	background:rgb(255, 186, 186);
+}
+
+#message-form input, 
+#message-form textarea { 
+    flex:1;
+    padding: 15px; 
+    margin-right: 40px;
+    border: 1px solid #391616; 
+    font-family: inherit;
+}
+
+.submit-btn { 
+    background: #000; 
+    color: #fff; 
+    min-width: 13rem;
+    padding: 15px; 
+    align-self: center;
+    margin-top: -40px;
+    font-weight: bold; 
+}
+
+.faq-rectangle {
+    display: flex;
+    margin: 70px auto;
+
+    justify-content: center;
+    align-items: center; 
+    gap: 50px;
+    margin-top: 8rem;
+
+    max-width: 500px;
+    padding: 20px 40px;
+    font-size: 20px;
+    background-color: #AD3209;
+    color: #ffffff; 
+}
+
+.faq-rectangle:hover {
+    background-color: #962a06;
+}
+
+.plus {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+
+
+.main-footer { 
+    background: #AD3209; 
+    color: #ffffff; 
+    padding: 30px; 
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 80px;
+}
+
+.footer-column {
+    flex: 1;     
+    min-width: 100px;
+    max-width: 250px;
+    justify-content: center;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+    display: block;
+    text-transform: capitalize;
+    font-family: 'Anton', sans-serif;
+    font-weight: normal;
+}

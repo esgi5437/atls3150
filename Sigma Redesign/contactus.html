@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Sigma Psi Zeta</title>
+    <link rel="stylesheet" href="css/syzstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Raleway:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-wrapper">
+
+            <div class="syz-title">
+                <a href="syzhome.html" aria-label="Home">
+                    <h1>SIGMA PSI ZETA SORORITY, INC.</h1>
+                    <p class="chapter">PHI CHAPTER | CU BOULDER</p>
+                </a>
+            </div>
+
+            <nav class="nav-menu" aria-label="main menu">
+                <ul>
+                    <li><a href="syzhome.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="#" aria-disabled="true" aria-label="Coming Soon">Recruitment</a></li>
+                    <li><a href="#" aria-disabled="true" aria-label="Coming Soon">SYZters</a></li>
+                    <li><a href="contactus.html" class="active" aria-current="page">Contact Us</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-header">
+            <h2>Contact Us</h2>
+            <p>Room 450, University Memorial Center (UMC)<br>206 UCB, Boulder, CO, 80309</p>
+        </section>
+
+        <section class="contact-form-section">
+            <form id="message-form">
+                <fieldset>
+                <legend>Send us a message!</legend>
+                    <ul>
+                        <li>
+                            <label for="name">Name*:</label>
+                            <input id="name" name="name" type="text" placeholder="Jane Doe" class="reqfield" required aria-required="true" />
+                        </li>
+
+
+                        <li><label for="email">Email*:</label>
+                            <input id="email" name="email" type="email" placeholder="jane.doe@gmail.com" class="reqfield" required aria-required="true" />
+                    </li>
+                    <li>
+                        <label for="subject">Subject:</label>
+                        <input id="subject" name="subject" type="text" placeholder="Subject" aria-required="false" />
+                    </li>
+                    <li>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" type="text" placeholder="Write your message here!" rows="5" aria-required="false"></textarea>
+                    </li>
+                    </ul>
+                </fieldset>
+                
+                <button type="submit" class="submit-btn" aria-label="Message Phi Chapter">Send</button>
+            </form>
+        </section>
+
+        <a href="#" class="faq-rectangle" aria-label="FAQ Coming Soon">
+            <h3>Frequently Asked Questions</h3>
+            <span class="plus">+</span> 
+        </a>
+
+    </main>
+
+
+
+    <footer class="main-footer" aria-label="footer">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <a href="contactus.html" class="footer-link"><h3>Contact Us</h3></a>
+                <p>Boulder, CO, 80309</p>
+            </div>
+
+            <div class="footer-column">
+                <a href="aboutus.html" class="footer-link"><h3>"Lead from the front"</h3></a>
+                <p>Established March 23, 1994</p>
+            </div>
+
+            <div class="footer-column">
+                <a href="#" class="footer-link" aria-disabled="true"><h3>Our National Philanthropy</h3></a>
+                <p>To combat violence against womxn in its varied forms.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
