@@ -15,10 +15,9 @@ a {
 .site-header { 
     background: #000000; 
     position: sticky; 
-    top: 0; 
-    min-height: 90px;
-    min-width: fit-content;
-    
+    top: 0;
+    width: 100%;
+    min-height: 90px;    
     z-index: 500;
 }
 
@@ -27,12 +26,14 @@ a {
     justify-content: space-between; 
     align-items: center; 
     padding: 1% 2%; 
+    margin: 0, auto;
 }
 
 .syz-title a {
     display: flex;
     align-items: center;
     gap: 10px;
+    overflow: hidden;
 }
 
 h1 {
@@ -52,8 +53,12 @@ h1 {
 }
 
 .syz-logo {
-    
-    height: 50px;
+    max-height: 50px;
+    width: auto;
+    max-width: 100%;
+    min-width: 0;
+    flex-shrink: 1;
+    object-fit: contain;
 }
 
 .nav-menu ul { 
@@ -440,16 +445,19 @@ fieldset {
 .main-footer { 
     background: #AD3209; 
     color: #ffffff; 
-    padding: 30px; 
+    min-width: fit-content;
+    width: 100%;
+    padding: 25px 0 50px 0;
+    border-top: 6px solid rgb(94, 0, 0);
 }
 
 .footer-grid {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    max-width: 1200px;
+    max-width: 2000px;
     margin: 0 auto;
-    gap: 80px;
+    gap: 150px;
 }
 
 .footer-column {
