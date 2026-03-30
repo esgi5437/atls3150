@@ -1,0 +1,54 @@
+/* --- NEW HOVER DROPDOWN STYLES --- */
+
+/* 1. Parent Anchor */
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* 2. The Menu Box */
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    top: 100%; /* Pushes it directly below the nav bar */
+    left: 0; 
+    background-color: #000000;
+    min-width: 220px; /* Gives the text enough breathing room */
+    z-index: 1000;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+
+/* 3. The Links Inside */
+.dropdown-content li a {
+    /* NEW: Reduced padding to be closer to the top nav bar size */
+    padding: 15px 15px; 
+    display: block;
+    color: #ffffff;
+    
+    /* NEW: Centering the text makes them look like equal options */
+    text-align: center; 
+    text-transform: none; 
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* 4. The Hover Effect */
+.dropdown-content li a:hover {
+    color: #FFCB05;
+}
+
+/* 5. The Trigger (Shows menu when hovering over the parent list item) */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Removes the underline for active dropdown items and turns them yellow instead */
+.nav-menu ul.dropdown-content a.active {
+    color: #FFCB05;
+    border-bottom: 2px solid #FFCB05;
+    font-weight: bold;
+}

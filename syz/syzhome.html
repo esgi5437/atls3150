@@ -18,7 +18,7 @@
 
             <div class="syz-title">
                 <a href="syzhome.html" aria-label="Home | Phi Chapter">
-                    <img src="images/syz-logo.png" alt="" class="syz-logo">
+                    <img src="images/syz-logo.png" alt="" class="syz-logo" aria-hidden="true">
                     <div class="title-text">
                         <h1>SIGMA PSI ZETA SORORITY, INC.</h1>
                         <p class="chapter">PHI CHAPTER | CU BOULDER</p>
@@ -26,13 +26,38 @@
                 </a>
             </div>
 
-            <nav class="nav-menu" aria-label="main menu">
+            <nav class="nav-menu" aria-label="Main Navigation">
                 <ul>
+
                     <li><a href="syzhome.html" class="active" aria-current="page">Home</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
-                    <li><a href="#" aria-disabled="true" title="Coming Soon" aria-label="Coming Soon">Recruitment</a></li>
-                    <li><a href="#" aria-disabled="true" title="Coming Soon" aria-label="Coming Soon">SYZters</a></li>
-                    <li><a href="contactus.html">Contact Us</a></li>
+             
+                    <li class="dropdown">
+                        <a href="pages/aboutus.html" class="dropbtn" aria-haspopup="true" aria-expanded="false">About Us</a>
+                        
+                       <ul class="dropdown-content" aria-label="About Us submenu">
+                        <li><a aria-disabled="true" role="link" class="coming-soon">Past Events</a></li>
+                        <li><a href="pages/philsyz.html">Philanthropy</a></li>
+                    </ul>
+                    </li>
+
+                   
+                    <li><a href="#" aria-disabled="true" title="Coming Soon" aria-label="Recruitment Coming Soon">Recruitment</a></li>
+
+                    <li class="dropdown">
+                        <a href="pages/rosterphisyz.html" class="dropbtn" aria-haspopup="true" aria-expanded="false">SYZters</a>
+                        
+                        <ul class="dropdown-content" aria-label="SYZters submenu">
+                            <li><a href="rosterphisyz.html">Active Class</a></li>
+                            <li><a href="rosterphisyz.html">Charter Class</a></li>
+                            <li><a href="rosterphisyz.html">Alpha Class</a></li>
+                            <li><a href="rosterphisyz.html">Beta Class</a></li>
+                            <li><a href="rosterphisyz.html">Other Classes (22)</a></li>
+                            <li><a href="rosterphisyz.html">Alpha Zeta Class</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="pages/contactus.html">Contact Us</a></li>
+
                 </ul>
             </nav>
 

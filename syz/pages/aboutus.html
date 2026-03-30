@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Sigma Psi Zeta</title>
-        <link rel="stylesheet" href="css/syzstyle.css">
+        <link rel="stylesheet" href="../css/syzstyle.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Raleway:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="site-header">
+     <header class="site-header">
         <div class="header-wrapper">
 
             <div class="syz-title">
-                <a href="syzhome.html" aria-label="Home | Phi Chapter">
-                    <img src="images/syz-logo.png" alt="" class="syz-logo">
+                <a href="../syzhome.html" aria-label="Home | Phi Chapter">
+                    <img src="../images/syz-logo.png" alt="" class="syz-logo" aria-hidden="true">
                     <div class="title-text">
                         <h1>SIGMA PSI ZETA SORORITY, INC.</h1>
                         <p class="chapter">PHI CHAPTER | CU BOULDER</p>
@@ -23,13 +23,38 @@
                 </a>
             </div>
 
-            <nav class="nav-menu" aria-label="main menu">
+            <nav class="nav-menu" aria-label="Main Navigation">
                 <ul>
-                    <li><a href="syzhome.html">Home</a></li>
-                    <li><a href="aboutus.html" class="active" aria-current="page">About Us</a></li>
-                    <li><a href="#" aria-disabled="true" title="Coming Soon" aria-label="Coming Soon">Recruitment</a></li>
-                    <li><a href="#" aria-disabled="true" title="Coming Soon" aria-label="Coming Soon">SYZters</a></li>
+
+                    <li><a href="../syzhome.html">Home</a></li>
+             
+                    <li class="dropdown">
+                        <a href="aboutus.html" class="dropbtn active" aria-current="page" aria-haspopup="true" aria-expanded="false">About Us</a>
+                        
+                       <ul class="dropdown-content" aria-label="About Us submenu">
+                        <li><a aria-disabled="true" role="link" class="coming-soon">Past Events</a></li>
+                        <li><a href="philsyz.html">Philanthropy</a></li>
+                    </ul>
+                    </li>
+
+                   
+                    <li><a href="recruitsyz.html" aria-disabled="true" title="Coming Soon" aria-label="Recruitment Coming Soon">Recruitment</a></li>
+
+                    <li class="dropdown">
+                        <a href="rosterphisyz.html" class="dropbtn" aria-haspopup="true" aria-expanded="false">SYZters</a>
+                        
+                        <ul class="dropdown-content" aria-label="SYZters submenu">
+                            <li><a href="rosterphisyz.html">Active Class</a></li>
+                            <li><a href="rosterphisyz.html">Charter Class</a></li>
+                            <li><a href="rosterphisyz.html">Alpha Class</a></li>
+                            <li><a href="rosterphisyz.html">Beta Class</a></li>
+                            <li><a href="rosterphisyz.html">Other Classes (22)</a></li>
+                            <li><a href="rosterphisyz.html">Alpha Zeta Class</a></li>
+                        </ul>
+                    </li>
+                    
                     <li><a href="contactus.html">Contact Us</a></li>
+
                 </ul>
             </nav>
 
@@ -114,20 +139,32 @@
         </section>
 
         <section class="symbols-section">
-            <h3>Our Symbols</h3>
+            <h2>Our Symbols</h2>
             <div class="symbols-container">
-                <div class="symbol">
+                <div class="crest-symbol">
                     <img src="https://static.wixstatic.com/media/20e4c2_ca00418f814f466dbc524c5e8f56e708~mv2.jpg" alt="Official Crest">
-                    <p>Our Crest</p>
+                    <h3>Our Crest</h3>
                 </div>
                 <div class="symbol">
                     <img src="https://static.wixstatic.com/media/20e4c2_43494a12107a4fafa5bfc546d0faf18a~mv2.jpg" alt="">
-                    <p>Red & Gold</p>
+                    <h3>Our Colors: <br> Red & Gold</h3>
                 </div>
                 <div class="symbol">
                     <img src="https://static.wixstatic.com/media/20e4c2_118bc7bfe71d44a7a75e248f65e23556~mv2.webp" alt="Official Yellow Rose">
-                    <p>Yellow Rose</p>
+                    <h3>Our Flowers: <br> Yellow Rose with Baby's Breath</h3>
                 </div>
+            </div>
+        </section>
+
+        <section class="herstory-section">
+            <div class="herstory-text">
+                <h2>Herstory</h2>
+                <p class="herstory-subtitle">The birth and growth of Phi Chapter at the University of Colorado Boulder.</p>
+                <p>Originally started as an interest group called S.P.I.R.I.T. (Sisters Promoting Integrity to Redefine the Importance of Tomorrow), 
+                    the Phi Chapter was founded on April 24, 2004 under the leadership of the charter class: 
+                    Ying Chung, KimDao Dang, Yunita Hoo, Jihye Kim, Quynh Le, Hana Pak, and Nancy Xu.</p>
+                <p>We have now been on the Boulder campus for over 20 years, and have an active house of 10 SYZters. 
+                    Even though our size is small, we are a very tight-knit group and are SYZters for life.</p>
             </div>
         </section>
     </main>
@@ -147,7 +184,7 @@
             </div>
 
             <div class="footer-column">
-                <a href="#" class="footer-link" aria-disabled="true" title="Coming Soon"><h3>Our National Philanthropy</h3></a>
+                <a href="philsyz.html" class="footer-link" aria-disabled="true" title="Coming Soon"><h3>Our National Philanthropy</h3></a>
                 <p>To combat violence against womxn in its varied forms.</p>
             </div>
         </div>
